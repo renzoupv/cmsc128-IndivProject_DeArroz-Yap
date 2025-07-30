@@ -4,17 +4,37 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
 /* Fix the header block */
 header {
     background: #000000;
-    height: 924px;
+    height: 120px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1000;
+    transition: all 0s ease-in-out;
+}
+
+header.scrolled {
+    height: 70px;
 }
 
 nav {
     background: #000000;
     padding: 35px 0;
     text-align: center;
+    transition: padding 0.3s ease-in-out;
+}
+
+header.scrolled nav {
+    padding: 20px 0;
 }
 
 /* Remove bullet points and default padding/margin */
@@ -46,35 +66,3 @@ nav a:hover {
     transition: color 0.5s ease-in-out;
 }
 
-#intro {
-    height: 500px;
-    width: 1000px;
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    margin: 200px 380px;
-    line-height: 1.5;
-}
-
-#intro h1 {
-    color: rgb(53, 223, 223);
-    font-family: "Open Sans", sans-serif;
-    font-weight: 500;
-    font-size: 22px;
-}
-
-#intro p {
-    color: white;
-    font-family: "Playfair Display", serif;
-    font-size: 65px;
-    font-weight: bold;
-}
-
-#intro h5 {
-    color: #757575;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    word-spacing: 7px;
-    letter-spacing: 3px;
-    margin-top: 170px;
-}

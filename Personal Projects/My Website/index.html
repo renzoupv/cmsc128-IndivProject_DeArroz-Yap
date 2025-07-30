@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renz Rendel De Arroz</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-   
+
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
+    <header id="main-header">
         <nav>
             <ul id="nav-links">
                 <li><a href="#intro">INTRO</a></li>
@@ -22,23 +23,132 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
-
-        <div id="intro">
-            <h1>Hello, I'm Renz Rendel De Arroz</h1>
-            <p>
-                Aspiring Software Engineer <br>
-                and Web Developer <br>
-                Based in the Philippines. 
-            </p>
-            <h5>
-                SCROLL FOR MORE
-            </h5>
-        </div>
     </header>
 
     <main>
+        <section id="intro">
+            <div class="intro-container" data-aos="fade-up" data-aos-duration="1s">
+                <div>
+                    <h1>Hello, I'm Renz Rendel De Arroz</h1>
+                    <p>
+                        Aspiring Software Engineer <br>
+                        and Web Developer <br>
+                        Based in the Philippines. 
+                    </p>
+
+                    <div class="scroll-line">
+                        <h5>SCROLL FOR MORE</h5>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-container" data-aos="fade-up" data-aos-duration="1s">
+                <div id="about-content">
+                    <div class="about-line">
+                        <div class="line"></div>
+                        <h1>ABOUT ME</h1>
+                        <p id="about-description">
+                            I am currently a 3rd year student at the University of the Philippines Visayas, pursuing a degree in Bachelor of Science in Computer Science. I got interested in programming 
+                            ever since I discovered how to create a simple website using HTML and CSS. Since then, I have been learning more about web development and software engineering, and I am excited to continue my journey in this field. 
+                            I am also interested in exploring other areas of computer science, such as mobile development and artificial intelligence. I enjoy working on projects that challenge me and allow me to learn new skills.
+                        </p>
+                    </div>
+                    
+                    <div id="contact-details">
+                            <h1>Contact Details</h1>
+                            <p id="contact-description">
+                                Renz Rendel P. De Arroz <br>
+                                Blk. 10, Lot 15, Chico Rd., Sto. Nino Subd., <br>
+                                Brgy. Cagbang, Oton <br>
+                                Iloilo 5020, Iloilo, Philippines <br>
+                                (+63) 9338107726 <br>
+                                renzodearroz@gmail.com
+                            </p>
+                    </div>
+                </div>
+
+                <div class="resume-button">
+                    <button class="dl-cv-btn">DOWNLOAD CV</button>
+                </div>
+
+                <div class="education-details">
+                    <div class="line"></div>
+                    <h1>WORK & EDUCATION</h1>
+                    <div class="education-icon">
+                        <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+                    </div>
+
+                    <div class="education-content-row1">
+                        <div class="education-description">
+                            <p>• 2011 - 2014</p>
+                            <div class="timeline-title">
+                                <p>Assumption Iloilo</p>
+                            </div>
+                            <div class="timeline-desc">
+                                <p>
+                                    This is where I spent my half of my grade school years. 
+                                    I was able to learn the basics of computers which sparked my interest in technology.
+                                    I was able to meet fantastic teachers and friends who helped me grow as a person.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="education-description">
+                            <p>• 2015 - 2023</p>
+                            <div class="timeline-title">
+                                <p>PAREF Westbridge School Inc</p>
+                            </div>
+                            <div class="timeline-desc">
+                                <p>
+                                    This is where I mostly spent most of my grade school and high school years.
+                                    I got culture shocked when I first entered this school because it was a different environment from my previous school.
+                                    But despite all of that, I was able to adapt and learn a lot of things from the teachers and the friends I made along the way.
+                                    The school's 1 on 1 mentoring program helped me a lot in my studies and personal growth. It made me who I am today. The school impacted 
+                                    my life in a lot of ways, and I am grateful for the experiences I had there.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-content-row2">
+                        <div class="education-description">
+                            <p>• 2023 - 2027</p>
+                            <div class="timeline-title">
+                                <p>University of the Philippines Visayas</p>
+                            </div>
+                            <div class="timeline-desc">
+                                <p>
+                                    Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse 
+                                    eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud 
+                                    sit dolor incididunt amet est occaecat nisi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-content">
+                    <div class="line"></div>
+                    <h1>SKILLS</h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects-container" data-aos="fade-up" data-aos-duration="1s">
+
+            </div>
+        </section>
     </main>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/d4673b8040.js" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
